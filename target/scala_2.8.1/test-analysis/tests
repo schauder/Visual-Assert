@@ -1,0 +1,4 @@
+#Tests
+#Thu Dec 30 22:22:20 CET 2010
+src\\test\\scala\\de\\schauderhaft\\visualAssert\\ImageComparisonTest.scala=de.schauderhaft.visualAssert.ImageComparisonTest<<org.scalatest.Suite
+src\\test\\scala\\de\\schauderhaft\\TraitExperimentTest.scala=de.schauderhaft.TraitExperimentTest<<org.scalatest.Suite

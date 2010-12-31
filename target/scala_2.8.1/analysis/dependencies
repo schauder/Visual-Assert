@@ -1,0 +1,6 @@
+#Source Dependencies
+#Thu Dec 30 22:22:17 CET 2010
+src\\main\\java\\de\\schauderhaft\\visualAssert\\SynchronImage.java=src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala
+src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala=
+src\\main\\scala\\de\\schauderhaft\\visualAssert\\Component2ImageService.scala=src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala
+src\\main\\scala\\de\\schauderhaft\\visualAssert\\ImageFileService.scala=src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala

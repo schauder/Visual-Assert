@@ -1,0 +1,6 @@
+#External Dependencies
+#Thu Dec 30 22:22:20 CET 2010
+D\:\\workspaces\\scala\\visualAssert\\lib_managed\\scala_2.8.1\\compile\\scalatest-1.2.jar=src\\test\\scala\\de\\schauderhaft\\visualAssert\\ImageComparisonTest.scala;src\\test\\scala\\de\\schauderhaft\\TraitExperimentTest.scala
+D\:\\workspaces\\scala\\visualAssert\\target\\scala_2.8.1\\classes\\de\\schauderhaft\\visualAssert\\VisualAssert.class=src\\test\\scala\\de\\schauderhaft\\visualAssert\\ImageComparisonTest.scala
+D\:\\workspaces\\scala\\visualAssert\\project\\boot\\scala-2.8.1\\lib\\scala-library.jar=src\\test\\scala\\de\\schauderhaft\\visualAssert\\ImageComparisonTest.scala;src\\test\\scala\\de\\schauderhaft\\TraitExperimentTest.scala
+C\:\\Program\ Files\\Java\\jdk1.6.0_22\\jre\\lib\\rt.jar=src\\test\\scala\\de\\schauderhaft\\visualAssert\\ImageComparisonTest.scala;src\\test\\scala\\de\\schauderhaft\\TraitExperimentTest.scala
