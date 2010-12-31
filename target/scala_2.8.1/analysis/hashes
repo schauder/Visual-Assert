@@ -1,6 +1,0 @@
-#Source Hashes
-#Thu Dec 30 22:22:17 CET 2010
-src\\main\\java\\de\\schauderhaft\\visualAssert\\SynchronImage.java=f23bf5ef373c7fa3d53e6114232385b04ae5ceae
-src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala=f09fbcfa57aea85162e18847455542855daad2cb
-src\\main\\scala\\de\\schauderhaft\\visualAssert\\Component2ImageService.scala=4154bdb8e08c3cc0b1bcda2d93da413d7d1d7bd4
-src\\main\\scala\\de\\schauderhaft\\visualAssert\\ImageFileService.scala=d49541fca9bb6c620d1ed5810b414e61826833c9

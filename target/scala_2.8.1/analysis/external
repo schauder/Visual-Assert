@@ -1,5 +1,0 @@
-#External Dependencies
-#Thu Dec 30 22:22:17 CET 2010
-D\:\\workspaces\\scala\\visualAssert\\lib_managed\\scala_2.8.1\\compile\\scalatest-1.2.jar=src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala
-D\:\\workspaces\\scala\\visualAssert\\project\\boot\\scala-2.8.1\\lib\\scala-library.jar=src\\main\\scala\\de\\schauderhaft\\visualAssert\\ImageFileService.scala;src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala;src\\main\\scala\\de\\schauderhaft\\visualAssert\\Component2ImageService.scala
-C\:\\Program\ Files\\Java\\jdk1.6.0_22\\jre\\lib\\rt.jar=src\\main\\java\\de\\schauderhaft\\visualAssert\\SynchronImage.java;src\\main\\scala\\de\\schauderhaft\\visualAssert\\ImageFileService.scala;src\\main\\scala\\de\\schauderhaft\\visualAssert\\VisualAssert.scala;src\\main\\scala\\de\\schauderhaft\\visualAssert\\Component2ImageService.scala
