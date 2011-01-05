@@ -9,6 +9,7 @@ import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
 
 class ImageComparisonTest extends FeatureSpec with ShouldMatchers with GivenWhenThen with VisualAssert {
+    def anImage = ImageIO.read(getClass.getClassLoader.getResourceAsStream("anImage.gif"))
 
     feature("A user can compare two images") {
 
@@ -37,7 +38,7 @@ class ImageComparisonTest extends FeatureSpec with ShouldMatchers with GivenWhen
             assert(exception.getMessage.contains("70"))
         }
 
-        scenario("when an image is compared to a differing Image the number of differing pixels is returned") {
+        scenario("when an image is compared to an image that differs the number of differing pixels is returned") {
             val one = new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB)
             val two = new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB)
             val g = two.getGraphics()
@@ -127,5 +128,4 @@ class ImageComparisonTest extends FeatureSpec with ShouldMatchers with GivenWhen
     	}
     }
     
-    def anImage = ImageIO.read(getClass.getClassLoader.getResourceAsStream("anImage.gif"))
 }
