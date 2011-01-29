@@ -15,7 +15,7 @@ class ImageFileService {
      *
      *  @param	 image image to be written
      *  @param	 fileName name of file to be created
-     *  @exception IOException if an error occurs during writing
+     *   IOException if an error occurs during writing
      */
     def writeImage(image: BufferedImage, fileName: String) {
         import java.io.IOException

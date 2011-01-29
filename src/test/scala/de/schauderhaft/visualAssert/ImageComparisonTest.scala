@@ -126,6 +126,5 @@ class ImageComparisonTest extends FeatureSpec with ShouldMatchers with GivenWhen
     		then("the image gets stored in the file systems")
     		assertEquals(noImage + "_actual", image)
     	}
-    }
-    
+    }    
 }

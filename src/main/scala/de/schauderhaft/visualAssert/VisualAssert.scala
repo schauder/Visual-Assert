@@ -11,7 +11,7 @@ trait VisualAssert {
 	val imageFileService = new ImageFileService();
 
     def assertEquals(imageOne: Image, imageTwo: Image) {
-        if (imageOne == imageTwo) return
+        if (imageOne == imageTwo) return 
         val sImageOne = new SynchronImage(imageOne)
         val sImageTwo = new SynchronImage(imageTwo)
         val dimension =  compareDimension(sImageOne, sImageTwo)
@@ -48,3 +48,6 @@ trait VisualAssert {
     }
 }
 
+object VisualAssert{
+	val INTERACTIVE_PROPERTY = "de.schauderhaft.visualAssert.interactive"
+}
