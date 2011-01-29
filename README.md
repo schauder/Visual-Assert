@@ -7,4 +7,5 @@ There will be an interactive mode where the test displays a little dialog showin
 On failed tests and on successful visual confirmation an image of the component is stored, wich can be used to 
 
 a) understand the reason for the failing test
+
 b) copy it in the classpath of your project so on the next run the test works without interaction with a human.
