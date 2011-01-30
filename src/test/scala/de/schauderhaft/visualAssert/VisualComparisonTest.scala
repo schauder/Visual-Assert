@@ -3,13 +3,29 @@ package de.schauderhaft.visualAssert
 import swing._
 import javax.swing._
 import swing.event._
+import scala.actors.Future
+
+    class ReturnValue{
+    	private var value = false
+    	
+    	private val latch = new java.util.concurrent.CountDownLatch(1)
+    	
+    	def setValue(aValue: Boolean) {
+    			value = aValue
+    			latch.countDown()
+    	}
+    	def getValue() = {
+    		latch.await
+    		value
+    	}
+    }
 
 object VisualComparisonTest {
-    def mainFrame(image: Image, description: String) = new Dialog {
+    def mainFrame(image: Image, description: String, result: ReturnValue) = new Dialog {
         title = "Visual Assert"
         val okButton = new Button("ok")
         val notOkButton = new Button("not ok")
-        var result: Option[Boolean] = None
+        
         contents = new BorderPanel {
             import BorderPanel.Position._
             add(new Label { icon = new ImageIcon(image) }, Center)
@@ -29,17 +45,13 @@ object VisualComparisonTest {
         }
 
         def ok {
-            result = Some(false)
-            close
+            result.setValue(true)
             dispose
         }
         def notOk {
-        	result = Some(false)
-        	close
+        	result.setValue(false)
         	dispose
         }
-        
-        closeOperation 
     }
 }
 
@@ -48,10 +60,12 @@ object Starter {
     def anImage = ImageIO.read(getClass.getClassLoader.getResourceAsStream("anImage.gif"))
 
     def main(args: Array[String]) {
+    	val returnValue = new ReturnValue
         Swing.onEDT {
-            val t = VisualComparisonTest.mainFrame(anImage, "Please verify that everything is ok in the image")
+            val t = VisualComparisonTest.mainFrame(anImage, "Please verify that everything is ok in the image", returnValue)
             t.pack
             t.visible = true
         }
+    	println( returnValue.getValue)
     }
 }
