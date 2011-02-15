@@ -17,7 +17,7 @@ object VisualComparison {
         returnValue.getValue
     }
 
-    private class ReturnValue {
+    private [visualAssert] class ReturnValue {
         private var value = false
 
         private val latch = new java.util.concurrent.CountDownLatch(1)
@@ -32,7 +32,7 @@ object VisualComparison {
         }
     }
 
-    def mainFrame(image: Image, description: String, result: ReturnValue) = new Frame {
+    private [visualAssert] def mainFrame(image: Image, description: String, result: ReturnValue) = new Frame {
         title = "Visual Assert"
         val okButton = new Button("ok")
         val notOkButton = new Button("not ok")
